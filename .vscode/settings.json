@@ -1,0 +1,44 @@
+{
+	"npm.packageManager": "pnpm",
+	"editor.detectIndentation": false, // vscode默认启用了根据文件类型自动设置tabsize的选项
+	"editor.tabSize": 4,
+	"prettier.enable": true,
+	"editor.lineNumbers": "on", // 开启代码行号
+	"editor.tabCompletion": "on", // 标签自动补全
+	"editor.formatOnPaste": true, // 粘贴代码时格式化
+	"editor.formatOnSave": true, // 开启保存文件自动格式化代码
+	// #每次保存的时候将代码按eslint格式进行修复
+	"eslint.format.enable": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.organizeImports": "always" // 保存时整理 import包
+	},
+	"eslint.enable": true, // 开启eslint检查
+	"eslint.experimental.useFlatConfig": true, // 开启eslint的扁平化配置
+
+	"[vue]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.useEditorConfig": false
+}
